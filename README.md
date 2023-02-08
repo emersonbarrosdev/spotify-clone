@@ -1,6 +1,10 @@
-# Spotify
+# Spotify Version Angular
+Integrated with spotify api. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/emersonbarros87/spotify-clone/license) 
+
+## Screen
+![home](https://user-images.githubusercontent.com/75150416/217663744-df900f01-9ccc-40fe-850a-da55424fb268.PNG)
 
 ## Development server
 
