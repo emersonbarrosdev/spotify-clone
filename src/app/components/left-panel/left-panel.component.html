@@ -1,0 +1,39 @@
+<div class="menus flex">
+  <div class="image-container flex flex-center">
+    <img src="../../../assets/images/spotify-logo.png" alt="logo spotify">
+  </div>
+
+  <div class="menu-container flex options">
+    <app-button-menu [description]="'Home'" [selected]="selectedMenu === 'Home'" (click)="clickButton('Home')">
+      <fa-icon [icon]="homeIcon"></fa-icon>
+    </app-button-menu>
+
+    <app-button-menu [description]="'Pesquisar'" [selected]="selectedMenu === 'Pesquisar'"
+      (click)="clickButton('Pesquisar')">
+      <fa-icon [icon]="searchIcon"></fa-icon>
+    </app-button-menu>
+
+    <app-button-menu [description]="'Artistas'" [selected]="selectedMenu === 'Artistas'"
+      (click)="clickButton('Artistas')">
+      <fa-icon [icon]="artistIcon"></fa-icon>
+    </app-button-menu>
+  </div>
+
+  <div class="menu-container flex">
+    <span class="playlist-title">PLAYLIST</span>
+    <div class="playlist-scroll">
+      <app-button-menu 
+      *ngFor="let playlist of playlists"
+      [description]="playlist.name" [selected]="selectedMenu === playlist.id"
+        (click)="onPlaylist(playlist.id)">
+        <fa-icon [icon]="playListIcon">
+        </fa-icon>
+      </app-button-menu>
+    </div>
+  </div>
+
+</div>
+
+<div class="info-user">
+ <app-user-footer></app-user-footer>
+</div>

@@ -1,0 +1,38 @@
+@import 'variables';
+
+.card {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+
+  .artist {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 10px 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .image {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .4;
+  }
+
+  span {
+    color: $white;
+    text-shadow: 2px 2px 10px background-white;
+  }
+}

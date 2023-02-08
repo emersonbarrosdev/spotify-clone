@@ -1,0 +1,110 @@
+@import 'variables';
+
+:host {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+
+  ::-webkit-scrollbar {
+    width: 7px;
+
+    &-thumb {
+      background-color: $orange;
+      border-radius: 10px;
+    }
+    &-track {
+      background: transparent;
+    }
+  }
+
+  .my-music {
+    padding: 0px 50px;
+    padding-bottom: 20px;
+    width: 100%;
+    max-height: 100vh;
+    overflow-y: scroll;
+  }
+
+  .d-block {
+    display: block;
+  }
+
+  .right-panel {
+    height: 100vh;
+  }
+}
+
+.table {
+  width: 100%;
+  text-align: left;
+  table-layout: fixed;
+  border-collapse: collapse;
+
+  .play {
+    color: $green-spotify;
+    font-size: .5rem;
+  }
+
+  .executable {
+    background-color: $purple;
+    padding: 10px;
+    box-shadow: 0px 0px 15px $orange;
+
+    td {
+      color: $green-spotify;
+    }
+  }
+
+  thead th {
+    font-size: .75rem;
+    font-weight: 600;
+    color: $orange;
+  }
+
+  th td {
+    padding-right: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:nth-child(1) {
+      padding-left: 10px
+    }
+  }
+
+  tr {
+    &:hover {
+      cursor: pointer;
+
+      td {
+        color: $green-spotify;
+      }
+    }
+
+    td {
+      padding: 10px 20px 10px 0px;
+      margin-top: 10px;
+      font-size: .85rem;
+      font-weight: 500;
+      color: $white;
+
+      &:nth-child(1) {
+        padding-left: 10px
+      }
+    }
+  }
+
+  .w {
+    @for $i from 1 to 10 {
+      $width: $i * 5;
+      &-#{ $width } {
+        width: #{ $width * 1% };
+      }
+    }
+  }
+
+  .align-right {
+    padding: 10px 20px 10px 0px;
+    text-align: right;
+  }
+}

@@ -1,0 +1,44 @@
+@import 'variables';
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 200px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .image {
+    height: 60%;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .controls {
+    padding: 20px;
+    background-color: black;
+    flex-grow: 1;
+    text-align: center;
+
+    span {
+      color: $white;
+      font-size: .9rem;
+      font-weight: 700;
+    }
+
+    .buttons {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 1.2rem;
+      
+      * {
+        color: $green-spotify;
+        cursor: pointer;
+      }
+    }
+  }
+}
