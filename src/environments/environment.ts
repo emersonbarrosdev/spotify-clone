@@ -9,7 +9,7 @@ export const environment = {
 export const SpotifyConfiguration = {
   clientId: '8c8c0f0aabf6447191b8e4b990f6931e',
   authEndPoint: 'https://accounts.spotify.com/authorize',
-  redirectUrl: 'https://spotify-clone-gamma-pink.vercel.app/login',
+  redirectUrl: 'https://spotify-clone-gamma-pink.vercel.app/login/',
   scopes: [
     "user-read-currently-playing", // musica tocando agora.
     "user-read-recently-played", // ler musicas tocadas recentemente
